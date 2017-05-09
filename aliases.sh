@@ -96,6 +96,10 @@ alias sites="cd $SRC/sites"
 alias play_sites="cd $SRC/play_sites"
 alias hq="cd $SRC/hq"
 alias deploy="cd $SRC/deploy"
+alias vegan="cd $SRC/veganbyme"
+alias challenge="cd $SRC/challenge"
+alias susph="cd $SRC/susph"
+alias tab="cd $SRC/tabibito"
 
 
 # Default dir
@@ -121,7 +125,8 @@ alias routefu_server="routefu && $C server 1234 $DD $DP"
 alias nn_server="nn && $C server 5000 $DD $DP"
 alias electro_server="electro && $C server 5001 $DD $DP"
 alias tab_server="tab && $C server 5002 $DD $DP"
-
+alias vegan_server="vegan && $C server 9292 $DD $DP"
+alias challenge_server="challenge && $C server 1980 $DD $DP"
 
 # Tests
 alias asset_test="asset && $C testrun .,config $DP"
@@ -148,7 +153,7 @@ alias deploy_development="deploy && bundle exec cap development deploy && fund"
 alias deploy_staging="deploy && bundle exec cap staging deploy && fund"
 alias deploy_production="deploy && bundle exec cap production deploy && fund"
 alias deploy_last="deploy && bundle exec cap last deploy && fund"
-
+alias deploy_tab="ssh play 'cd tabibito && git pull && bundle install --without test development --deployment && touch tmp/restart.txt'"
 
 # Remote
 alias reload_all="deploy && bundle exec cap load server:reload"
