@@ -19,7 +19,7 @@ def img(args)
 
   # Compress retina image
   puts "Compress retina image"
-  cmd("mogrify -strip -interlace Plane -sampling-factor 4:2:0 -quality 75% #{r}", [])
+  cmd("mogrify -strip -interlace Plane -sampling-factor 4:2:0 -quality 85% #{r}", [])
 
   # Create normal image
   puts "Create normal image"
@@ -27,7 +27,7 @@ def img(args)
 
   # Compress normal image
   puts "Compress normal image"
-  cmd("mogrify -strip -interlace Plane -sampling-factor 4:2:0 -quality 75% #{n}", [])
+  cmd("mogrify -strip -interlace Plane -sampling-factor 4:2:0 -quality 85% #{n}", [])
 
   puts "Done.\n"
 end
