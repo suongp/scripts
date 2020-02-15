@@ -123,6 +123,13 @@ alias pro="cd $SRC/projects/api"
 alias crypto="cd $SRC/cryptofund/api"
 alias friend="cd $SRC/stayfriend/api"
 
+# Waveorb
+alias wb="waveorb build"
+alias wd="waveorb deploy"
+alias ws="nodemon -e js,mjs,json,yml -i dist -x waveorb serve"
+alias wbd="wb && wd "
+alias kn="killall node"
+
 # Default dir
 DD='.,lib,config'
 
